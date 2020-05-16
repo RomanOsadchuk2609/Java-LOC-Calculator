@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="bntOpen" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBtnOpen" prefHeight="25.0" prefWidth="185.0" text="Завантажити файл" />
+        <Label fx:id="labelFilename" layoutX="208.0" layoutY="18.0" prefHeight="17.0" prefWidth="185.0" text="Зображення не завантажено" />
+        <Button fx:id="btnSave" layoutX="401.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBtnSave" prefHeight="25.0" prefWidth="185.0" text="Зберегти результат" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="46.0" prefHeight="343.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="columnKey" prefWidth="285.0" text="Критерій" />
+          <TableColumn fx:id="columnValue" minWidth="0.0" prefWidth="284.0" text="Значення" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
